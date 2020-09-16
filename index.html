@@ -7,12 +7,12 @@
   <body>
     <header>
       <img src="https://via.placeholder.com/163x35" alt="">
-      <nav>
+      <div>
         <span>Поиск по сайту</span>
         <a href="#">Войти</a>
         <a href="#">Сравнить</a>
         <a href="#">Корзина</a>
-      </nav>
+      </div>
       <nav>
         <ul>
           <li><a href="#">Каталог товаров</a></li>
@@ -32,43 +32,31 @@
           <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
           <a href="#">Подробнее</a> 
           <h3>Характеристики</h3>
-            <ul>
-              <p>8,5 м</p>
-              <li>Длина полки</li>
-              <p>5 кг</p>
-              <li>Вес полки</li>
-              <p>Карбон</p>
-              <li>Матерал</li>
-            </ul>
+            <table>
+              <tr>
+                <td>Длина полки</td>
+                <td>8,5 м</td>
+              </tr>
+              <tr>
+                <td>Вес полки</td>
+                <td>5 кг</td>
+              </tr>
+              <tr>
+                <td>Материал</td>
+                <td>Карбон</td>
+              </tr>
+            </table>
       </section>
 
       <section>
         <h3>Классы товаров магазина</h3>
-        <ul>
-          <img src="https://via.placeholder.com/80x80" alt="">
-          <li>
-            <a href="#">Виртуальная реальность</a>
-          </li>
-          <img src="https://via.placeholder.com/80x80" alt="">
-          <li>
-            <a href="#">Моноподы для селфи</a>
-          </li>
-          <img src="https://via.placeholder.com/80x80" alt="">
-          <li>
-            <a href="#">Экшн-камеры</a>
-          </li>
-          <img src="https://via.placeholder.com/80x80" alt="">
-          <li>
-            <a href="#">Фитнес-брастлеты</a>
-          </li>
-          <img src="https://via.placeholder.com/80x80" alt="">
-          <li>
-            <a href="#">Умные часы</a>
-          </li>
-          <img src="https://via.placeholder.com/80x80" alt="">
-          <li>
-            <a href="#">Квадрокоптеры</a>
-          </li>
+        <ul>          
+          <li><a href="#">Виртуальная реальность</a></li>          
+          <li><a href="#">Моноподы для селфи</a></li>
+          <li><a href="#">Экшн-камеры</a></li>
+          <li><a href="#">Фитнес-брастлеты</a></li>
+          <li><a href="#">Умные часы</a></li>
+          <li><a href="#">Квадрокоптеры</a></li>
         </ul>
       </section>
 
@@ -79,16 +67,22 @@
           <li><a name="#bottom"></a>Гарантия</li>
           <li>Кредит</li>
         </ul>
-        <h3>Доставка</h3>
-        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+        <ul>
+          <li>
+            <h3>Доставка</h3>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </li>
+        </ul>
       </section>
 
       <section>
         <h2>Произодители</h2>
-        <img src="https://via.placeholder.com/140x80" alt="">
-        <img src="https://via.placeholder.com/140x80" alt="">
-        <img src="https://via.placeholder.com/140x80" alt="">
-        <img src="https://via.placeholder.com/140x80" alt="">
+        <p>
+          <img src="https://via.placeholder.com/140x80" alt="">
+          <img src="https://via.placeholder.com/140x80" alt="">
+          <img src="https://via.placeholder.com/140x80" alt="">
+          <img src="https://via.placeholder.com/140x80" alt="">
+        </p>
       </section>
 
       <section>
@@ -96,9 +90,9 @@
           <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
           <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
           <ul>
-            <li><a href="#">Деловые линии</a></li>
-            <li><a href="#">Автотрейдинг</a></li>
-            <li><a href="#">ЖелДорЭкспедиция</a></li>
+            <li>Деловые линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
           </ul>
           <a href="#">Подробно о нас</a>
       </section>
@@ -114,11 +108,11 @@
       <h2>Подвал</h2>
       <img src="https://via.placeholder.com/163x35" alt="">
       <p>г. Москва, ул. Строителей, 15</p>
-      <nav>
+      <div>
         <a href="#">Войти</a>
         <a href="#">Сравнить</a>
         <a href="#">Корзина</a>
-      </nav>
+      </div>
       <nav>
         <ul>
           <li><a name="bottom">Доставка</a></li>
@@ -126,7 +120,7 @@
           <li><a name="bottom_2">Контакты</a></li>
         </ul>       
       </nav>
-      <p>Тел.: +7 (495) 495-95-95</p>
+      <p>Тел.: <a href="tel:+74954959595">+7 (495) 495-95-95</a></p>
     </footer>   
   </body>
 </html>
