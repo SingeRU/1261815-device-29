@@ -1,0 +1,208 @@
+/* Fonts */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    src: url(fonts/opensans.woff2),
+         url(fonts/gilroylight.woff2);
+}
+
+/* Variables */
+
+:root {
+    --special-yellow-light: #F7E296;
+    --special-yellow-dark: #F0C52E;
+    --special-yellow: #FFC600;
+    --basic-white: #FFFFFF;
+    --basic-black: #000000; 
+    --basic-grey: #E5E5E5;
+    --special-black: #363636;
+}
+
+.main-header {
+    background-color: var(--special-yellow-light);
+}
+/* Header */
+.search {
+    color: rgba(0, 0, 0, 0.3);
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    font-family: "Open Sans";
+    font-style: normal;
+}
+
+.login-link {
+    text-decoration: none;
+    color: var(--basic-black);
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    font-family: Open Sans;
+    font-style: normal;
+}
+.comparison {
+    text-decoration: none; 
+    color: var(--basic-black);
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px; 
+    font-family: Open Sans;
+    font-style: normal; 
+}
+
+.basket {
+    text-decoration: none;
+    color: var(--basic-black);
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    font-family: Open Sans;
+    font-style: normal;
+}
+
+.main-nav-item {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+
+/* Center */
+.features {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.main-feature {
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 58px;
+}
+
+.details {
+    text-decoration: none;
+    background-color: var(--special-yellow-dark);
+    color: var(--basic-black);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.specification-item {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.specification-value {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.product-item {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration: none;
+    color: var(--basic-black);
+}
+
+.additional {
+    background-color: var(--basic-grey);
+}
+
+.slider-item-fixed {
+    background-color: var(--basic-black);
+    color: var(--special-yellow-light);
+}
+
+.slider-item {
+    background-color: var(--special-yellow-dark);
+}
+
+.control-item-1 {
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 58px;
+}
+
+.control-text {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 28px;
+}
+
+/* Shop info */
+.about-us {
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 58px;
+}
+
+.about-us-text {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 28px;
+}
+
+.partners-item {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.more-about-us, 
+.write-us {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    background-color: var(--special-yellow-dark);
+    color: var(--basic-black);
+    text-decoration: none;
+}
+
+.contacts-text {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 28px;
+}
+
+/* Footer */
+.main-footer {
+    background-color: var(--special-black) ;
+}
+
+.address {
+    color: var(--basic-white);
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+}
+.login-link-footer,
+.comparison-footer,
+.basket-footer {
+    color: rgba(255, 255, 255, 0.7);
+}
+.sec-nav-item {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--basic-white);
+    text-decoration: none;
+}
+
+.phone-text {
+    color: var(--basic-white);
+}
+
+.phone {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--basic-white);
+    text-decoration: none;
+}
