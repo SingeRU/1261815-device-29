@@ -1,11 +1,32 @@
 /* Fonts */
 @font-face {
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
+    src: url(../fonts/opensans.woff2), url(../fonts/opensans.woff);
+    font-weight: 400;
     font-style: normal;
-    src: url(fonts/opensans.woff2),
-         url(fonts/gilroylight.woff2);
+
 }
 
+@font-face {
+    font-family: "Open Sans Light";
+    src: url(../fonts/opensanslight.woff2), url(../fonts/opensanslight.woff);
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy Light";
+    src: url(../fonts/gilroylight.woff2), url(../fonts/gilroylight.woff);
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy Bold";
+    src: url(../fonts/gilroyextrabold.woff2), url(../fonts/gilroyextrabold.woff);
+    font-weight: 800;
+    font-style: normal;
+}
 /* Variables */
 
 :root {
@@ -18,55 +39,67 @@
     --special-black: #363636;
 }
 
+/* Header */
 .main-header {
     background-color: var(--special-yellow-light);
 }
-/* Header */
+
 .search {
-    color: rgba(0, 0, 0, 0.3);
     font-weight: 300;
     font-size: 15px;
     line-height: 20px;
-    font-family: "Open Sans";
+    font-family: "Open Sans Light";
     font-style: normal;
+    opacity: 0.3;
 }
 
-.login-link {
-    text-decoration: none;
-    color: var(--basic-black);
+.search:hover {
     font-weight: 300;
     font-size: 15px;
     line-height: 20px;
-    font-family: Open Sans;
+    font-family: "Open Sans Light";
     font-style: normal;
-}
-.comparison {
-    text-decoration: none; 
-    color: var(--basic-black);
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 20px; 
-    font-family: Open Sans;
-    font-style: normal; 
+    opacity: 0.6;
 }
 
+.login-link,
+.comparison,
 .basket {
     text-decoration: none;
     color: var(--basic-black);
     font-weight: 300;
     font-size: 15px;
     line-height: 20px;
-    font-family: Open Sans;
+    font-family: "Open Sans Light";
     font-style: normal;
+}
+
+.login-link:hover,
+.comparison:hover,
+.basket:hover {
+    opacity: 0.6; 
+}
+
+.login-link:active,
+.comparison:active,
+.basket:active {
+    opacity: 0.3;
 }
 
 .main-nav-item {
     font-weight: 800;
     font-size: 18px;
+    font-family: "Gilroy Bold";
     line-height: 22px;
     text-decoration: none;
     text-transform: uppercase;
     color: var(--basic-black);
+}
+.main-nav-item:hover {
+    opacity: 0.6;
+}
+.main-nav-item:active {
+    opacity: 0.3;
 }
 
 /* Center */
@@ -80,6 +113,11 @@
     font-weight: 800;
     font-size: 47px;
     line-height: 58px;
+    font-family: "Gilroy Bold";
+}
+
+.main-feature-text{
+    font-family: "Open Sans Light";
 }
 
 .details {
@@ -89,18 +127,25 @@
     font-weight: 800;
     font-size: 18px;
     line-height: 22px;
+    font-family: "Gilroy Bold";
 }
 
 .specification-item {
     font-weight: 300;
     font-size: 13px;
     line-height: 15px;
+    font-family: "Gilroy Light";
 }
 
 .specification-value {
     font-weight: 300;
     font-size: 36px;
     line-height: 42px;
+    font-family: "Gilroy Light";
+}
+
+.product-list {
+    list-style-type: none;
 }
 
 .product-item {
@@ -109,31 +154,49 @@
     line-height: 22px;
     text-decoration: none;
     color: var(--basic-black);
+    font-family: "Gilroy Bold";
+}
+
+.product-item:active {
+    opacity: 0.3;
 }
 
 .additional {
     background-color: var(--basic-grey);
 }
 
-.slider-item-fixed {
-    background-color: var(--basic-black);
-    color: var(--special-yellow-light);
+.slider-list {
+    list-style-type: none;
 }
 
 .slider-item {
     background-color: var(--special-yellow-dark);
+    font-family: "Gilroy Bold";
+}
+.slider-item:active,
+.slider-item:focus {
+    background-color: var(--basic-black);
+    color: var(--special-yellow-light);
+    width: 160px;
+    text-align: left;
+}
+
+.control-item {
+    list-style-type: none;
 }
 
 .control-item-1 {
     font-weight: 800;
     font-size: 47px;
     line-height: 58px;
+    font-family: "Gilroy Bold";
 }
 
 .control-text {
     font-weight: 300;
     font-size: 15px;
     line-height: 28px;
+    font-family: "Open Sans Light";
 }
 
 /* Shop info */
@@ -141,18 +204,21 @@
     font-weight: 800;
     font-size: 47px;
     line-height: 58px;
+    font-family: "Gilroy Bold";
 }
 
 .about-us-text {
     font-weight: 300;
     font-size: 15px;
     line-height: 28px;
+    font-family: "Open Sans Light";
 }
 
 .partners-item {
     font-weight: 800;
     font-size: 16px;
     line-height: 28px;
+    font-family: "Gilroy Bold";
 }
 
 .more-about-us, 
@@ -163,12 +229,14 @@
     background-color: var(--special-yellow-dark);
     color: var(--basic-black);
     text-decoration: none;
+    font-family: "Gilroy Bold";
 }
 
 .contacts-text {
     font-weight: 300;
     font-size: 15px;
     line-height: 28px;
+    font-family: "Open Sans Light";
 }
 
 /* Footer */
@@ -181,22 +249,37 @@
     font-weight: 300;
     font-size: 15px;
     line-height: 20px;
+    font-family: "Open Sans Light";
 }
 .login-link-footer,
 .comparison-footer,
 .basket-footer {
     color: rgba(255, 255, 255, 0.7);
 }
+
+.sec-nav-list {
+    list-style-type: none;
+}
+
 .sec-nav-item {
     font-weight: 800;
     font-size: 18px;
     line-height: 22px;
     color: var(--basic-white);
     text-decoration: none;
+    font-family: "Gilroy Bold";
+}
+.sec-nav-item:hover {
+    opacity: 0.6;
+}
+
+.sec-nav-item:active {
+    opacity: 0.3;
 }
 
 .phone-text {
     color: var(--basic-white);
+    font-family: "Open Sans Light";
 }
 
 .phone {
@@ -205,4 +288,5 @@
     line-height: 20px;
     color: var(--basic-white);
     text-decoration: none;
+    font-family: "Open Sans Light";
 }
