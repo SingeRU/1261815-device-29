@@ -8,21 +8,21 @@
 }
 
 @font-face {
-    font-family: "Open Sans Light";
+    font-family: "Open Sans";
     src: url(../fonts/opensanslight.woff2), url(../fonts/opensanslight.woff);
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "Gilroy Light";
+    font-family: "Gilroy";
     src: url(../fonts/gilroylight.woff2), url(../fonts/gilroylight.woff);
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "Gilroy Bold";
+    font-family: "Gilroy";
     src: url(../fonts/gilroyextrabold.woff2), url(../fonts/gilroyextrabold.woff);
     font-weight: 800;
     font-style: normal;
@@ -48,7 +48,7 @@
     font-weight: 300;
     font-size: 15px;
     line-height: 20px;
-    font-family: "Open Sans Light";
+    font-family: "Open Sans";
     font-style: normal;
     opacity: 0.3;
 }
@@ -57,7 +57,7 @@
     font-weight: 300;
     font-size: 15px;
     line-height: 20px;
-    font-family: "Open Sans Light";
+    font-family: "Open Sans";
     font-style: normal;
     opacity: 0.6;
 }
@@ -70,7 +70,7 @@
     font-weight: 300;
     font-size: 15px;
     line-height: 20px;
-    font-family: "Open Sans Light";
+    font-family: "Open Sans";
     font-style: normal;
 }
 
@@ -89,7 +89,7 @@
 .main-nav-item {
     font-weight: 800;
     font-size: 18px;
-    font-family: "Gilroy Bold";
+    font-family: "Gilroy";
     line-height: 22px;
     text-decoration: none;
     text-transform: uppercase;
@@ -113,11 +113,11 @@
     font-weight: 800;
     font-size: 47px;
     line-height: 58px;
-    font-family: "Gilroy Bold";
+    font-family: "Gilroy";
 }
 
 .main-feature-text{
-    font-family: "Open Sans Light";
+    font-family: "Open Sans";
 }
 
 .details {
@@ -127,21 +127,21 @@
     font-weight: 800;
     font-size: 18px;
     line-height: 22px;
-    font-family: "Gilroy Bold";
+    font-family: "Gilroy";
 }
 
 .specification-item {
     font-weight: 300;
     font-size: 13px;
     line-height: 15px;
-    font-family: "Gilroy Light";
+    font-family: "Gilroy";
 }
 
 .specification-value {
     font-weight: 300;
     font-size: 36px;
     line-height: 42px;
-    font-family: "Gilroy Light";
+    font-family: "Gilroy";
 }
 
 .product-list {
@@ -154,7 +154,7 @@
     line-height: 22px;
     text-decoration: none;
     color: var(--basic-black);
-    font-family: "Gilroy Bold";
+    font-family: "Gilroy";
 }
 
 .product-item:active {
@@ -171,7 +171,8 @@
 
 .slider-item {
     background-color: var(--special-yellow-dark);
-    font-family: "Gilroy Bold";
+    font-family: "Gilroy";
+    font-weight: 800;
 }
 .slider-item:active,
 .slider-item:focus {
@@ -189,14 +190,14 @@
     font-weight: 800;
     font-size: 47px;
     line-height: 58px;
-    font-family: "Gilroy Bold";
+    font-family: "Gilroy";
 }
 
 .control-text {
     font-weight: 300;
     font-size: 15px;
     line-height: 28px;
-    font-family: "Open Sans Light";
+    font-family: "Open Sans";
 }
 
 /* Shop info */
@@ -204,21 +205,21 @@
     font-weight: 800;
     font-size: 47px;
     line-height: 58px;
-    font-family: "Gilroy Bold";
+    font-family: "Gilroy";
 }
 
 .about-us-text {
     font-weight: 300;
     font-size: 15px;
     line-height: 28px;
-    font-family: "Open Sans Light";
+    font-family: "Open Sans";
 }
 
 .partners-item {
     font-weight: 800;
     font-size: 16px;
     line-height: 28px;
-    font-family: "Gilroy Bold";
+    font-family: "Gilroy";
 }
 
 .more-about-us, 
@@ -229,14 +230,14 @@
     background-color: var(--special-yellow-dark);
     color: var(--basic-black);
     text-decoration: none;
-    font-family: "Gilroy Bold";
+    font-family: "Gilroy";
 }
 
 .contacts-text {
     font-weight: 300;
     font-size: 15px;
     line-height: 28px;
-    font-family: "Open Sans Light";
+    font-family: "Open Sans";
 }
 
 /* Footer */
@@ -249,7 +250,7 @@
     font-weight: 300;
     font-size: 15px;
     line-height: 20px;
-    font-family: "Open Sans Light";
+    font-family: "Open Sans";
 }
 .login-link-footer,
 .comparison-footer,
@@ -267,7 +268,7 @@
     line-height: 22px;
     color: var(--basic-white);
     text-decoration: none;
-    font-family: "Gilroy Bold";
+    font-family: "Gilroy";
 }
 .sec-nav-item:hover {
     opacity: 0.6;
@@ -279,7 +280,7 @@
 
 .phone-text {
     color: var(--basic-white);
-    font-family: "Open Sans Light";
+    font-family: "Open Sans";
 }
 
 .phone {
@@ -288,5 +289,5 @@
     line-height: 20px;
     color: var(--basic-white);
     text-decoration: none;
-    font-family: "Open Sans Light";
+    font-family: "Open Sans";
 }
