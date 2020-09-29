@@ -295,3 +295,135 @@
     text-decoration: none;
     font-family: "Open Sans";
 }
+
+/* Catalog */
+
+/* Main */
+
+.catalog-title {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 58px;
+    color: var(--basic-black);
+}
+
+.inner-pages {
+    list-style-type: none;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    opacity: 0.3;
+    color: var(--basic-black);
+}
+.inner-pages-link {
+    text-decoration: none;
+    color: var(--basic-black);
+}
+
+.filter {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+
+.sort {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+
+.sort-list {
+    list-style-type: none;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--basic-black);
+}
+
+/* Catalog products */
+.catalog-list {
+    list-style-type: none;
+}
+
+.catalog-item {
+    text-decoration: none;
+    color: var(--basic-black);
+}
+
+.catalog-item-title {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--basic-black);
+}
+
+.basket-button {
+    background-color: var(--special-yellow-dark);
+    font-family: "Gilroy";
+    font-weight: 800;
+    opacity: 0.7;
+}
+.basket-button:hover {
+    background-color: var(--special-yellow-dark);
+    font-family: "Gilroy";
+    font-weight: 800;
+    opacity: 1;
+}
+
+.basket-button:active {
+    background-color: var(--special-yellow-dark);
+    font-family: "Gilroy";
+    font-weight: 800;
+    opacity: 0.3;
+}
+
+.pagination-list {
+    list-style-type: none;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+
+}
+
+
+.pagination-item-link {
+    text-decoration: none;
+    color: var(--basic-black);
+    opacity: 0.3;
+}
+
+.pagination-item-link:hover {
+    opacity: 0.6;
+}
+
+.pagination-item-link:active {
+    opacity: 1;
+}
+
+.current {
+    text-decoration: none;
+    color: var(--basic-black);
+    opacity: 1;
+    cursor: not-allowed;
+}
+
+
+
