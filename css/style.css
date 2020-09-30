@@ -354,6 +354,11 @@
     color: var(--basic-black);
 }
 
+.sort-link {
+    text-decoration: none;
+    color: var(--basic-black);
+}
+
 /* Catalog products */
 .catalog-list {
     list-style-type: none;
@@ -373,20 +378,22 @@
     color: var(--basic-black);
 }
 
-.basket-button {
+.basket-link {
     background-color: var(--special-yellow-dark);
     font-family: "Gilroy";
     font-weight: 800;
+    color: var(--basic-black);
     opacity: 0.7;
+    text-decoration: none;
 }
-.basket-button:hover {
+.basket-link:hover {
     background-color: var(--special-yellow-dark);
     font-family: "Gilroy";
     font-weight: 800;
     opacity: 1;
 }
 
-.basket-button:active {
+.basket-link:active {
     background-color: var(--special-yellow-dark);
     font-family: "Gilroy";
     font-weight: 800;
