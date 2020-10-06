@@ -38,10 +38,23 @@
     --basic-grey: #E5E5E5;
     --special-black: #363636;
 }
+/* Global */
 
+.page {
+    height: 100%;
+}
+
+.page-body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+  }
+  
 /* Header */
 .main-header {
     background-color: var(--special-yellow-light);
+    margin-bottom: 70px;
 }
 
 .search {
@@ -86,11 +99,23 @@
     opacity: 0.3;
 }
 
+.main-header-bar {
+    background-color: var(--special-yellow-light);
+}
+
+.main-navigation {
+    display: grid;
+}
+
 .main-nav-conteiner {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .main-nav-item {
+    display: grid;
+    grid-template-columns: 1fr min-content;  
     font-weight: 800;
     font-size: 18px;
     font-family: "Gilroy";
@@ -107,6 +132,13 @@
 }
 
 /* Center */
+
+.center {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
 .features {
     font-weight: 300;
     font-size: 15px;
@@ -149,7 +181,12 @@
 }
 
 .product-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 40px;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .product-item {
@@ -167,6 +204,8 @@
 
 .additional {
     background-color: var(--basic-grey);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .slider-list {
@@ -204,7 +243,27 @@
     font-family: "Open Sans";
 }
 
+
+/* Producer columns */
+
+.producer-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 40px;
+    margin: 0 auto;
+
+}
+
+/* About-us-columns */
+
+.about-us-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 40px;
+}
+
 /* Shop info */
+
 .about-us {
     font-weight: 800;
     font-size: 47px;
@@ -246,7 +305,14 @@
 
 /* Footer */
 .main-footer {
-    background-color: var(--special-black) ;
+    background-color: var(--special-black);
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
 }
 
 .address {
