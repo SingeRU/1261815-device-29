@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
-    <header class="main-header">
-      <div class="header-grid container">
+    <header class="main-header container">
+      <div class="header-grid">
         <a class="main-header-logo">
           <img src="img/-e-logo.svg" width="163.3" height="34.96" alt="Девайс">
         </a>
@@ -37,21 +37,27 @@
             <h2 class="main-feature">Делай селфи,<br>как Бен Стиллер</h2>
             <p class="main-feature-text">Самая длинная палка для селфи доступна в нашем магазине.<br> Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
             <a class="details" href="#">Подробнее</a>
-            <dl>
-              <dt class="specification-value">8,5 м</dt>
-              <dd class="specification-item">Длина полки</dd>
-              <dt class="specification-value">5 кг</dt>
-              <dd class="specification-item">Вес полки</dd>
-              <dt class="specification-value">Карбон</dt>
-              <dd class="specification-item">Материал</dd>
-            </dl>
+            <table>
+              <tr>
+                <td class="specification-item">Длина полки</td>
+                <td class="specification-value">8,5 м</td>
+              </tr>
+              <tr>
+                <td class="specification-item">Вес полки</td>
+                <td class="specification-value">5 кг</td>
+              </tr>
+              <tr>
+                <td class="specification-item">Материал</td>
+                <td class="specification-value">Карбон</td>
+              </tr>
+            </table>
           </div>
         </div> 
       </section>
 
       <section class="products">
         <div class="container">
-          <ul class="product-list">          
+          <ul class="products-list">          
             <li class="product-list"><a  class="product-item" href="#">Виртуальная реальность</a></li>          
             <li class="product-list"><a  class="product-item" href="#">Моноподы для селфи</a></li>
             <li class="product-list"><a  class="product-item" href="#">Экшн-камеры</a></li>
@@ -79,10 +85,10 @@
         </section>
         <section class="producer">
           <div class="producer-columns container">
-            <img src="img/logo-1.jpg" width="140" height="80" alt="">
-            <img src="img/logo-2.jpg" width="140" height="80" alt="">
-            <img src="img/logo-3.jpg" width="140" height="80" alt="">
-            <img src="img/logo-4.jpg" width="140" height="80" alt="">
+            <a href="#"><img src="img/logo-1.jpg" width="140" height="80" alt=""></a>
+            <a href="#"><img src="img/logo-2.jpg" width="140" height="80" alt=""></a>
+            <a href="#"><img src="img/logo-3.jpg" width="140" height="80" alt=""></a>
+            <a href="#"><img src="img/logo-4.jpg" width="140" height="80" alt=""></a>
           </div>
         </section>  
         <section class="Contacts">
@@ -113,13 +119,15 @@
 
     <footer class="main-footer">
       <div class="footer-grid container">
-        <div>
+        <div class="footer-funcs">
           <img src="img/-e-logo-yellow.svg" width="163.3" height="34.96" alt="Девайс">
-          <a class="login-link login-link-footer" href="#">Войти</a>
-          <a class="comparison comparison-footer" href="#">Сравнить</a>
-          <a class="basket basket-footer" href="#">Корзина</a>
+          <div>
+            <a class="login-link login-link-footer" href="#">Войти</a>
+            <a class="comparison comparison-footer" href="#">Сравнить</a>
+            <a class="basket basket-footer" href="#">Корзина</a>
+          </div>
         </div>
-        <div>
+        <div class="footer-contacts">
           <p class="address">г. Москва, ул. Строителей, 15</p>
           <ul>
             <li class="sec-nav-list"><a class="sec-nav-item" href="#">Доставка</a></li>
