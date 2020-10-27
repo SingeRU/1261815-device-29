@@ -99,14 +99,53 @@
 
 .login-link {
     margin-left: auto;
+    position: relative;
+}
+
+.login-link::before{
+    content: "";
+    position: absolute;
+    background-image: url(../img/login-icon-black.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 8.67px;
+    height: 9.33px;
+    left: -13.17px;
+    top: 5px;
 }
 
 .comparison {
-    margin-left: 239px;
+    margin-left: 227px;
+    position: relative;
+}
+
+.comparison::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/lines-black.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 8.17px;
+    height: 8.17px;
+    left: -14.92px;
+    top: 5px;
 }
 
 .basket {
     margin-left: 63px;
+    position: relative;
+}
+
+.basket::before{
+    content: "";
+    position: absolute;
+    background-image: url(../img/basket-black.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 10px;
+    height: 7.61px;
+    left: -14.88px;
+    top: 5px;
 }
 
 .login-link,
@@ -162,7 +201,6 @@
 }
 
 .main-nav-item {
-  
     font-weight: 800;
     font-size: 18px;
     font-family: "Gilroy";
@@ -213,16 +251,24 @@
 }
 
 .details {
+    margin-top: 67px;
     text-decoration: none;
     background-color: var(--special-yellow-dark);
     color: var(--basic-black);
     font-weight: 800;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 8px;
     font-family: "Gilroy";
-    justify-content: center;
+    display: block;
     max-width: 220px;
-    padding: 0;
+    height: 8px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.specification {
+    margin-top: 67px;
 }
 
 .specification-item {
@@ -239,6 +285,10 @@
     font-family: "Gilroy";
 }
 
+.products {
+    margin-top: 119px;
+}
+
 .products-list {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -247,7 +297,9 @@
     padding: 0;
 }
 
+
 .product-item {
+    position: relative;
     font-weight: 800;
     font-size: 18px;
     line-height: 22px;
@@ -262,6 +314,8 @@
 
 .additional {
     background-color: var(--basic-grey);
+    min-height: 288px;
+    margin-top: 184px;
 }
 
 .slider-grid {
@@ -275,19 +329,36 @@
     padding: 0;
 }
 
+
 .slider-item {
     background-color: var(--special-yellow-dark);
     font-family: "Gilroy";
     font-weight: 800;
-    justify-content: center;
-    padding: 0;
     min-width: 160px;
+    border: none;
+    display: block;
+    max-width: 220px;
+    height: 8px;
+    line-height: 8px;
+    text-transform: uppercase;
+    text-align: center;
 }
+
 .slider-item:active,
 .slider-item:focus {
     background-color: var(--basic-black);
     color: var(--special-yellow-light);
-    width: 160px;
+    width: 277px;
+    height: 40px;
+    text-align: start;
+}
+
+.slider-list:nth-child(2){
+    margin-top: 54px;
+}
+
+.slider-list:nth-child(3){
+    margin-top: 54px;
 }
 
 .control {
@@ -336,6 +407,7 @@
     font-size: 47px;
     line-height: 58px;
     font-family: "Gilroy";
+    margin-bottom: 0;
 }
 
 .about-us-text {
@@ -345,24 +417,59 @@
     font-family: "Open Sans";
 }
 
+.about-us-text-1 {
+    margin-bottom: 0;
+    margin-top: 50px;
+}
+
+.about-us-text-2 {
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+.partners {
+    margin-top: 60px;
+    margin-bottom: 0;
+}
+
 .partners-item {
     font-weight: 800;
     font-size: 16px;
-    line-height: 28px;
     font-family: "Gilroy";
+}
+
+.partners-item-2 {
+    margin-top: 21px;
+}
+
+.partners-item-3 {
+    margin-top: 20px;
+}
+
+.write-us {
+    margin-top: 92px;
+}
+
+.more-about-us {
+    margin-top: 84px;
 }
 
 .more-about-us, 
 .write-us {
     font-weight: 800;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 8px;
     background-color: var(--special-yellow-dark);
     color: var(--basic-black);
     text-decoration: none;
     font-family: "Gilroy";
+    display: block;
+    max-width: 220px;
+    height: 8px;
+    text-transform: uppercase;
+    text-align: center;
 }
-
+ 
 .contacts-grid {
     margin: 0;
     padding: 0;
@@ -373,6 +480,7 @@
     font-size: 15px;
     line-height: 28px;
     font-family: "Open Sans";
+    margin-top: 50px;
 }
 
 /* Footer */
@@ -383,6 +491,7 @@
 
 .footer-grid {
     display: grid;
+    padding: 50px 140px 65px 140px;
 }
 
 .footer-funcs-wrapper {
@@ -392,6 +501,7 @@
 
 .footer-funcs {
     margin-left: auto;
+
 }
 
 .footer-contacts {
@@ -400,6 +510,7 @@
 }
 
 .address {
+    margin-top: 40px;
     color: var(--basic-white);
     font-weight: 300;
     font-size: 15px;
@@ -409,8 +520,48 @@
 .login-link-footer,
 .comparison-footer,
 .basket-footer {
-    color: rgba(255, 255, 255, 0.7);
+    color: var(--basic-black);
+    opacity: 0.7;
     margin: 0;
+}
+
+.login-link-footer::before{
+    content: "";
+    position: absolute;
+    background-image: url(../img/login-icon-yellow.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 8.67px;
+    height: 9.33px;
+    left: -13.17px;
+    top: 5px;
+    opacity: 1;
+}
+
+.comparison-footer::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/lines-yellow.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 8.17px;
+    height: 8.17px;
+    left: -14.92px;
+    top: 5px;
+    opacity: 1;
+}
+
+.basket-footer::before{
+    content: "";
+    position: absolute;
+    background-image: url(../img/basket-yellow.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 10px;
+    height: 7.61px;
+    left: -14.88px;
+    top: 5px;
+    opacity: 1;
 }
 
 .comparison-footer {
@@ -423,6 +574,7 @@
 
 .sec-nav {
     display: flex;
+    margin-top: 39px;
 }
 
 .sec-nav-list {
@@ -454,6 +606,7 @@
 }
 
 .phone-text {
+    margin: 40px;
     color: var(--basic-white);
     font-family: "Open Sans";
     margin-left: auto;
@@ -470,13 +623,25 @@
 
 .social {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .sites {
     display: flex;
+    flex-wrap: wrap;
     min-width: 136px;
+    justify-content: center;
+    margin-top: 67px;
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
     justify-content: space-between;
+}
+
+.copyright {
+    margin-top: 67px;
 }
 
 /* Catalog */
@@ -492,7 +657,7 @@
     color: var(--basic-black);
 }
 
-.inner-pages {
+.breadcrumbs {
     list-style-type: none;
     font-family: "Open Sans";
     font-style: normal;
@@ -502,7 +667,7 @@
     opacity: 0.3;
     color: var(--basic-black);
 }
-.inner-pages-link {
+.breadcrumbs-link {
     text-decoration: none;
     color: var(--basic-black);
 }
