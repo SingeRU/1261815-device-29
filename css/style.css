@@ -520,7 +520,7 @@
 .login-link-footer,
 .comparison-footer,
 .basket-footer {
-    color: var(--basic-black);
+    color: var(--basic-white);
     opacity: 0.7;
     margin: 0;
 }
