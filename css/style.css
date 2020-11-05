@@ -37,6 +37,7 @@
     --basic-black: #000000; 
     --basic-grey: #E5E5E5;
     --special-black: #363636;
+    --special-grey: #F2F2F2;
 }
 
 * {
@@ -78,6 +79,7 @@
 
 .header-funcs {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 14px;
 }
 
@@ -88,8 +90,15 @@
     font-family: "Open Sans";
     font-style: normal;
     opacity: 0.3;
-    position: relative;
     margin-left: 25px;
+    border: none;
+    border-radius: 0;
+    background-color: inherit;
+    outline: none;
+}
+
+.search-label {
+    position: relative;
 }
 
 .search:hover {
@@ -101,7 +110,12 @@
     opacity: 0.6;
 }
 
-.search::before {
+.search:active,
+.search:focus {
+    opacity: 1;
+}
+
+.search-label::before {
     content: "";
     position: absolute;
     background-image: url(../img/search.svg);
@@ -109,7 +123,6 @@
     background-position: 0 0;
     width: 12.47px;
     height: 12.47px;
-    left: -24.2px;
     top: 3px;
 }
 
@@ -200,6 +213,7 @@
 .main-nav-container {
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
     position: relative;
@@ -277,8 +291,8 @@
     display: grid;
     grid-template-columns: min-content min-content min-content;
     column-gap: 61px;
-    margin-top: 18px;
-    visibility: hidden;
+    padding-top: 18px;
+    display: none;
 }
 
 .product-hover:hover {
@@ -312,8 +326,8 @@
     font-style: normal;
 }
 
-.main-nav-item-1:hover + .product-hover {
-    visibility: visible;
+.main-nav-list-1:hover .product-hover {
+    display: grid;
 }
 
 /* Center */
@@ -908,6 +922,7 @@
 
 .sec-nav {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 39px;
 }
 
@@ -957,6 +972,7 @@
 
 .social {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -970,6 +986,7 @@
 
 .social-button {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
@@ -977,6 +994,158 @@
 .copyright {
     margin-top: 67px;
 }
+
+/* Modal */
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  color: var(--basic-black);
+  background-position: 0 0;
+  background-repeat: repeat;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  width: 960px;
+  height: 550px;
+  display: none;
+}
+
+.modal-write-us {
+    background-color: var(--basic-white);
+    padding: 92px 100px 69px 100px;
+    font-family: "Gilroy";
+    font-weight: 800;
+}
+
+.modal-map {
+    background-color: var(--basic-white);
+    box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
+}
+
+.write-us-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.name-space-form {
+    border: none;
+    border-radius: 0;
+    width: 360px;
+    height: 50px;
+    background-color: var(--special-grey);
+    margin-right: 40px;
+    margin-top: 10px;
+    margin-bottom: 32px;
+    padding: 16px 0 15px 20px;
+}
+
+.email-space-form {
+    border: none;
+    border-radius: 0;
+    width: 360px;
+    height: 50px;
+    background-color: var(--special-grey);
+    padding: 16px 0 15px 20px;
+    margin-top: 10px
+}
+
+.text-form {
+    border: none;
+    border-radius: 0;
+    width: 760px;
+    height: 167px;
+    background-color: var(--special-grey);
+    padding: 16px 0 132px 20px;
+    margin-top: 10px;
+    margin-bottom: 54px;
+}
+
+.name-space-form:focus,
+.email-space-form:focus,
+.text-form:focus {
+    outline: none;
+    background-color: var(--basic-white);
+    border: 2px solid #F7E296;
+}
+
+.submit-button {
+    border: none;
+    border: 0;
+    background-color: inherit;
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    position: relative;
+    padding-left: 60px;
+    text-transform: uppercase;
+}
+
+.submit-button-label {
+    position: relative;
+}
+
+.submit-button-label::after {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 8px;
+    background-color: var(--special-yellow-light);
+    left: 0;
+    bottom: 7px;
+    z-index: -1;
+}
+
+.submit-button-label:hover::after {
+    top: -10px;
+    height: 40px;
+}
+
+.submit-button-label:active::after {
+    opacity: 0.7;
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    padding-bottom: 22.5px;
+    padding-right: 22.5px;
+    border: 0;
+    cursor: pointer;
+    background-color: var(--special-yellow);
+    border-radius: 50%;
+    opacity: 0.5;
+}
+  
+  .modal-close::before,
+  .modal-close::after {
+    content: "";
+    position: absolute;
+    top: 26px;
+    left: 15px;
+    width: 25px;
+    height: 2px;
+    background-color: var(--basic-white);
+}
+
+.modal-close::before {
+    transform: rotate(45deg);
+}
+  
+.modal-close::after {
+    transform: rotate(-45deg);
+}
+
+.modal-map-close {
+    top: 17px;
+    right: -15px;
+}  
 
 /* Catalog */
 
