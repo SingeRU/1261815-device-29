@@ -94,11 +94,14 @@
     border: none;
     border-radius: 0;
     background-color: inherit;
-    outline: none;
 }
 
 .search-label {
     position: relative;
+}
+
+.search-label:focus {
+    text-decoration: underline;
 }
 
 .search:hover {
@@ -1067,8 +1070,9 @@
 .email-space-form:focus,
 .text-form:focus {
     outline: none;
+    box-shadow:
+    0 0 0 2px var(--special-yellow-light);
     background-color: var(--basic-white);
-    border: 2px solid #F7E296;
 }
 
 .submit-button {
